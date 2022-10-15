@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "77eeadb3-57ee-4f15-8661-19e0507ae96f",
+    "colId": "6b097df5-b80a-42c5-8687-92ecc22d780f",
+    "containerId": "22c91fcb-ae40-4c37-94d3-a0220a0337ef",
+    "name": "Login",
+    "url": "{{base_url}}/auth/login",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-10-15T21:48:05.213Z",
+    "modified": "2022-10-15T21:48:05.213Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "*/*",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"email\": \"demo@kumaKloudcom\",\n    \"password\": \"12345678\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "81d8ce2f-df89-40b6-b0f2-ef8bdfb18dba",
+    "colId": "6b097df5-b80a-42c5-8687-92ecc22d780f",
+    "containerId": "1402c9bc-d821-494e-9466-8518871dc9b3",
+    "name": "Create Shipment",
+    "url": "{{base_url}}/shipments",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2022-10-15T21:48:05.214Z",
+    "modified": "2022-10-15T21:48:05.214Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "*/*",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"customer_id\": \"061ce0bc-f0d0-47ae-957b-3b88a13c4fec\",\n  \"vehicle_id\": \"d2a6afe9-a632-46b4-a11d-19e16bb14e25\",\n  \n  \"tasks\": [\n    {\n      \"type\": \"pickup\",\n      \"date\": \"2022-10-15\",\n      \"package_content\": \"3 paquetes de pantalones jeans\",\n      \"package_instruction\": \"Recoger todos y entregalor a sus respectivos duenos\",\n      \"address\": \"Calle Cristobal Colon Mz.A Lt.20 Urb. Pablo Canepa\",\n      \"address_reference\": \"A dos casas del colegio Humanitas\",\n      \"delivery_zone_id\": \"c759a409-084b-4d38-a3e9-351764dc5355\",\n      \"contact_full_name\": \"Elvis Pinares\",\n      \"contact_phone_code\": \"51\",\n      \"contact_phone_number\": \"950 468 383\",\n      \"contact_email\": \"epinaresg@gmail.com\"\n    }  \n  ]\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "1430d463-c20e-43c2-ac58-96f278331f60",
+    "colId": "6b097df5-b80a-42c5-8687-92ecc22d780f",
+    "containerId": "a5fd15ec-76c9-4baf-9206-f0bab04b2f2b",
+    "name": "Get data from create shipment",
+    "url": "{{base_url}}/utilities/data",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2022-10-15T21:48:05.215Z",
+    "modified": "2022-10-15T21:48:05.215Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "*/*",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
+  }
+]

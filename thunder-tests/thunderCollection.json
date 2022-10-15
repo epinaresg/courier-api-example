@@ -1,0 +1,49 @@
+[
+  {
+    "_id": "6b097df5-b80a-42c5-8687-92ecc22d780f",
+    "colName": "DeliveryServiceDemo",
+    "created": "2022-10-15T21:48:05.210Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "22c91fcb-ae40-4c37-94d3-a0220a0337ef",
+        "name": "Auth",
+        "containerId": "",
+        "created": "2022-10-15T21:48:05.212Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "1402c9bc-d821-494e-9466-8518871dc9b3",
+        "name": "Shipment",
+        "containerId": "",
+        "created": "2022-10-15T21:48:05.213Z",
+        "sortNum": 20000
+      },
+      {
+        "_id": "a5fd15ec-76c9-4baf-9206-f0bab04b2f2b",
+        "name": "Utilities",
+        "containerId": "",
+        "created": "2022-10-15T21:48:05.214Z",
+        "sortNum": 30000
+      }
+    ],
+    "settings": {
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "auth": {
+        "type": "bearer",
+        "bearer": "{{token}}"
+      },
+      "tests": [],
+      "envId": "78ab2fe0-8367-4cf6-8bbf-937589add32a"
+    }
+  }
+]
