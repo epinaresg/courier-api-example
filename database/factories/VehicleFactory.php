@@ -17,7 +17,7 @@ class VehicleFactory extends Factory
     public function definition()
     {
         return [
-            'name' => fake()->word() . ' Vehicle',
+            'name' => ucwords(fake()->word()) . ' ' . ucwords(fake()->word()) . ' Vehicle',
             'description' => fake()->paragraph()
         ];
     }

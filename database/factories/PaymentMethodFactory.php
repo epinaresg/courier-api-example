@@ -17,7 +17,7 @@ class PaymentMethodFactory extends Factory
     public function definition()
     {
         return [
-            'name' => fake()->word() . ' Credit Card',
+            'name' => ucwords(fake()->word()) . ' ' . ucwords(fake()->word()) . ' Credit Card',
             'description' => fake()->paragraph()
         ];
     }

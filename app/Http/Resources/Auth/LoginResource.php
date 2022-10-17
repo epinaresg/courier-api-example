@@ -23,7 +23,8 @@ class LoginResource extends JsonResource
             'auth' => [
                 'access_token' => $this->access_token,
                 'token_type' => 'bearer',
-                'expires_in' => config('jwt.ttl') * 60,
+                'expires_in' => time() + (config('jwt.ttl') * 60),
+                'date' => date('Y-m-d H:i:s', time() + (config('jwt.ttl') * 60)),
             ]
         ];
     }

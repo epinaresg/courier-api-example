@@ -40,7 +40,7 @@
     "method": "POST",
     "sortNum": 30000,
     "created": "2022-10-15T21:48:05.214Z",
-    "modified": "2022-10-15T22:42:02.745Z",
+    "modified": "2022-10-17T17:27:22.807Z",
     "headers": [
       {
         "name": "Accept",
@@ -51,7 +51,7 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"customer_id\": \"06592481-a8a5-4f3e-95c9-bd0152d5cd63\",\n  \"vehicle_id\": \"148c3344-fad0-491d-ab55-691161547f0b\",\n  \"tasks\": [\n    {\n      \"order\": \"1\",\n      \"type\": \"pickup\",\n      \"date\": \"2022-10-16\",\n      \"package_content\": \"2 paquetes de pantalones jeans\",\n      \"package_instruction\": \"Recoger todos y entregalor a sus respectivos duenos\",\n      \"address\": \"Calle Cristobal Colon Mz.A Lt.20 Urb. Pablo Canepa\",\n      \"address_reference\": \"A dos casas del colegio Humanitas\",\n      \"delivery_zone_id\": \"242b73d4-001c-4650-90c8-c44e66c82a14\",\n      \"contact_full_name\": \"Elvis Pinares\",\n      \"contact_phone_code\": \"+51\",\n      \"contact_phone_number\": \"950468383\",\n      \"contact_email\": \"epinaresg@gmail.com\"\n    },\n    {\n      \"order\": \"2\",\n      \"type\": \"dropoff\",\n      \"date\": \"2022-11-15\",\n      \"package_content\": \"1 Pantalones Jeans\",\n      \"package_instruction\": \"Entregar el paquete para Yanina Caro\",\n      \"address\": \"AAHH. Primero de Junio, Mz. C Lt.5\",\n      \"address_reference\": \"Entrada frente al colegio la merced\",\n      \"delivery_zone_id\": \"8883d828-7b33-4395-ba19-78a53c797df9\",\n      \"contact_full_name\": \"Yanina Caro\",\n      \"contact_phone_code\": \"+51\",\n      \"contact_phone_number\": \"998999888\",\n      \"contact_email\": \"epinaresg@gmail.com\",\n      \"payment_method_id\": \"18bc5e64-1bf7-4547-8dca-6bae8154d1cf\",\n      \"total_receivable\": \"65\"\n    },\n    {\n      \"order\": \"3\",\n      \"type\": \"dropoff\",\n      \"date\": \"2022-11-15\",\n      \"package_content\": \"3 Pantalones Jeans\",\n      \"package_instruction\": \"Entregar el paquete para Bryan Pinares\",\n      \"address\": \"Los Plasticos 201, Urb. Vulcano\",\n      \"address_reference\": \"Entrada frente al colegio la merced\",\n      \"delivery_zone_id\": \"c49dd098-0999-49cb-91d6-e705dfdd609a\",\n      \"contact_full_name\": \"Bryan Pinares\",\n      \"contact_phone_code\": \"+51\",\n      \"contact_phone_number\": \"999999999\",\n      \"contact_email\": \"epinaresg@gmail.com\",\n      \"payment_method_id\": \"18bc5e64-1bf7-4547-8dca-6bae8154d1cf\",\n      \"total_receivable\": \"205\"\n    }\n  ]\n}",
+      "raw": "{\n  \"customer_id\": \"2aa84b5e-21c7-44ec-bdf9-fa95f3731f03\",\n  \"vehicle_id\": \"b8f40f28-8ff0-473c-ac77-a83189905f77\",\n  \"tasks\": [\n    {\n      \"order\": \"1\",\n      \"type\": \"pickup\",\n      \"date\": \"2022-10-16\",\n      \"package_content\": \"2 paquetes de pantalones jeans\",\n      \"package_instruction\": \"Recoger todos y entregalor a sus respectivos duenos\",\n      \"address\": \"Calle Cristobal Colon Mz.A Lt.20 Urb. Pablo Canepa\",\n      \"address_reference\": \"A dos casas del colegio Humanitas\",\n      \"delivery_zone_id\": \"bc80309b-7bb0-465f-b1ed-79bfc9035458\",\n      \"contact_full_name\": \"Elvis Pinares\",\n      \"contact_phone_code\": \"+51\",\n      \"contact_phone_number\": \"950468383\",\n      \"contact_email\": \"epinaresg@gmail.com\"\n    },\n    {\n      \"order\": \"2\",\n      \"type\": \"dropoff\",\n      \"date\": \"2022-11-15\",\n      \"package_content\": \"1 Pantalones Jeans\",\n      \"package_instruction\": \"Entregar el paquete para Yanina Caro\",\n      \"address\": \"AAHH. Primero de Junio, Mz. C Lt.5\",\n      \"address_reference\": \"Entrada frente al colegio la merced\",\n      \"delivery_zone_id\": \"ee0236d8-7edc-4811-bcb6-7d34cdd33aba\",\n      \"contact_full_name\": \"Yanina Caro\",\n      \"contact_phone_code\": \"+51\",\n      \"contact_phone_number\": \"998999888\",\n      \"contact_email\": \"epinaresg@gmail.com\",\n      \"payment_method_id\": \"289fa0ac-cb86-4e44-b9bf-51e2089924e3\",\n      \"total_receivable\": \"65\"\n    },\n    {\n      \"order\": \"3\",\n      \"type\": \"dropoff\",\n      \"date\": \"2022-11-15\",\n      \"package_content\": \"3 Pantalones Jeans\",\n      \"package_instruction\": \"Entregar el paquete para Bryan Pinares\",\n      \"address\": \"Los Plasticos 201, Urb. Vulcano\",\n      \"address_reference\": \"Entrada frente al colegio la merced\",\n      \"delivery_zone_id\": \"eeebf761-0836-4446-ba9a-878d16c85dcf\",\n      \"contact_full_name\": \"Bryan Pinares\",\n      \"contact_phone_code\": \"+51\",\n      \"contact_phone_number\": \"999999999\",\n      \"contact_email\": \"epinaresg@gmail.com\",\n      \"payment_method_id\": \"289fa0ac-cb86-4e44-b9bf-51e2089924e3\",\n      \"total_receivable\": \"205\"\n    }\n  ]\n}",
       "form": []
     },
     "tests": [],
@@ -172,5 +172,85 @@
         }
       ]
     }
+  },
+  {
+    "_id": "e314cb79-6336-4e14-ac7c-8f695556048a",
+    "colId": "6b097df5-b80a-42c5-8687-92ecc22d780f",
+    "containerId": "a5fd15ec-76c9-4baf-9206-f0bab04b2f2b",
+    "name": "Get customers",
+    "url": "{{base_url}}/customers",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2022-10-17T18:16:49.425Z",
+    "modified": "2022-10-17T18:18:37.933Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "*/*",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "7dc60a02-5132-42ff-8237-0ce61dab2a97",
+    "colId": "6b097df5-b80a-42c5-8687-92ecc22d780f",
+    "containerId": "a5fd15ec-76c9-4baf-9206-f0bab04b2f2b",
+    "name": "Get vehicles",
+    "url": "{{base_url}}/vehicles",
+    "method": "GET",
+    "sortNum": 60000,
+    "created": "2022-10-17T18:19:07.463Z",
+    "modified": "2022-10-17T18:19:10.888Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "*/*",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "fa8df6bd-1302-4f35-8beb-932a1e9599a1",
+    "colId": "6b097df5-b80a-42c5-8687-92ecc22d780f",
+    "containerId": "a5fd15ec-76c9-4baf-9206-f0bab04b2f2b",
+    "name": "Get payment methods",
+    "url": "{{base_url}}/payment_methods",
+    "method": "GET",
+    "sortNum": 70000,
+    "created": "2022-10-17T18:19:18.376Z",
+    "modified": "2022-10-17T18:19:27.362Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "*/*",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "3752f3e5-ef8f-41e3-bde2-9c40cb0ffafa",
+    "colId": "6b097df5-b80a-42c5-8687-92ecc22d780f",
+    "containerId": "a5fd15ec-76c9-4baf-9206-f0bab04b2f2b",
+    "name": "Get delivery zones",
+    "url": "{{base_url}}/delivery_zones",
+    "method": "GET",
+    "sortNum": 80000,
+    "created": "2022-10-17T18:19:40.355Z",
+    "modified": "2022-10-17T18:20:00.549Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "*/*",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "tests": []
   }
 ]

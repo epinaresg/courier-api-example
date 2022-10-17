@@ -42,6 +42,6 @@ final class UtilityGetController extends Controller
             'delivery_zones' =>  GetDeliveryZonesResource::collection($deliveryZones),
             'payment_methods' =>  GetPaymentMethodsResource::collection($paymentMethods),
             'vehicles' =>  GetVehiclesResource::collection($vehicles),
-        ], JsonResponse::HTTP_CREATED);
+        ], JsonResponse::HTTP_OK);
     }
 }

@@ -17,6 +17,7 @@ class GetPaymentMethodsResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
+            'label' => $this->name,
             'description' => $this->description,
         ];
     }

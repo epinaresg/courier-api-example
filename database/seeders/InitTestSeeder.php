@@ -25,7 +25,7 @@ class InitTestSeeder extends Seeder
         User::create([
             'first_name' => 'Demo',
             'last_name' => 'KumaKloud',
-            'email' => 'demo@kumaKloudcom',
+            'email' => 'demo@kumaKloud.com',
             'password' => Hash::make('12345678')
         ]);
 

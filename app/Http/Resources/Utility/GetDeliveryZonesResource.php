@@ -18,6 +18,7 @@ class GetDeliveryZonesResource extends JsonResource
             'id' => $this->id,
             'type' => $this->type,
             'name' => $this->name,
+            'label' => $this->name,
         ];
     }
 }

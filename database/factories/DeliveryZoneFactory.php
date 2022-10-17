@@ -21,7 +21,7 @@ class DeliveryZoneFactory extends Factory
 
         return [
 
-            'name' => fake()->word() . ' Zone',
+            'name' => ucwords(fake()->word()) . ' ' . ucwords(fake()->word()) . ' Zona',
             'type' => reset($enumDeliveryZones),
             'price_pick_up' => rand(9, 15) . '.00',
             'price_drop_off' =>  rand(9, 15) . '.00',

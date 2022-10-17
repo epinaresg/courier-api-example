@@ -13,7 +13,7 @@ final class RefreshTokenController extends Controller
         return response()->json([
             'access_token' => $authToken,
             'token_type' => 'bearer',
-            'expires_in' => config('jwt.ttl') * 60
+            'expires_in' => time() + (config('jwt.ttl') * 60)
         ], JsonResponse::HTTP_OK);
     }
 }

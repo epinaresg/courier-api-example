@@ -36,7 +36,7 @@ class PaginateShipmentResource extends JsonResource
             "total_pick_up" => $this->total_pick_up,
             "total_drop_off" => $this->total_drop_off,
             "total_receivable" => $this->total_receivable,
-            "total" => $this->total_pick_up,
+            "total" => $this->total,
         ];
     }
 }

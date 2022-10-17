@@ -9,7 +9,7 @@ final class EloquentShipmentRespository implements ShipmentRepository
 {
     public function get(): LengthAwarePaginator
     {
-        return Shipment::paginate();
+        return Shipment::paginate(2);
     }
 
     public function save(array $data): Shipment
