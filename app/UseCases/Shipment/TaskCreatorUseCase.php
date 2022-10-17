@@ -5,7 +5,7 @@ namespace App\UseCases\Shipment;
 use App\Models\Shipment;
 use App\Repositories\Shipment\TaskRepository;
 
-class TaskCreator
+class TaskCreatorUseCase
 {
     private $repository;
 

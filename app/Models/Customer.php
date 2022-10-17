@@ -17,11 +17,6 @@ class Customer extends Model
         'email',
     ];
 
-    public function customerAccounts()
-    {
-        return $this->hasMany(CustomerAccount::class);
-    }
-
     public function scopeEmail($query, $email)
     {
         return $query->where('email', $email);

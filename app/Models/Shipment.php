@@ -19,7 +19,12 @@ class Shipment extends Model
         'customer_id',
         'vehicle_id',
         'tasks_qty',
-        'tasks_missing'
+        'tasks_missing_qty',
+
+        'total_receivable',
+        'total_pick_up',
+        'total_drop_off',
+        'total'
     ];
 
     public function account()
@@ -27,9 +32,9 @@ class Shipment extends Model
         return $this->belongsTo(Account::class);
     }
 
-    public function customerAccount()
+    public function customer()
     {
-        return $this->belongsTo(CustomerAccount::class);
+        return $this->belongsTo(Customer::class);
     }
 
     public function vehicle()

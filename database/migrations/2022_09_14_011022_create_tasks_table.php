@@ -42,11 +42,11 @@ return new class () extends Migration {
 
             $table->string('contact_email')->nullable();
 
-            $table->foreignUuid('payment_method_id');
+            $table->foreignUuid('payment_method_id')->nullable();
             $table->foreign('payment_method_id')->references('id')->on('payment_methods');
             $table->index('payment_method_id');
 
-            $table->foreignUuid('state_id');
+            $table->foreignUuid('state_id')->nullable();
             $table->foreign('state_id')->references('id')->on('states');
             $table->index('state_id');
 

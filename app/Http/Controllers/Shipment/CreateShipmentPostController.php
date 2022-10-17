@@ -5,8 +5,9 @@ namespace App\Http\Controllers\Shipment;
 use App\Http\Requests\Shipment\ShipmentCreateRequest;
 use App\Repositories\Shipment\EloquentShipmentRespository;
 use App\Repositories\Shipment\EloquentTaskRepository;
-use App\UseCases\Shipment\ShipmentCreator;
-use App\UseCases\Shipment\TaskCreator;
+use App\UseCases\Shipment\ShipmentCalculateUseCase;
+use App\UseCases\Shipment\ShipmentCreatorUseCase;
+use App\UseCases\Shipment\TaskCreatorUseCase;
 use Illuminate\Http\JsonResponse;
 
 class CreateShipmentPostController
@@ -24,13 +25,16 @@ class CreateShipmentPostController
     public function __invoke(ShipmentCreateRequest $request)
     {
         $data = $request->validated();
-        $shipmentCreator = new ShipmentCreator($this->eloquentShipmentRespository);
+        $shipmentCreator = new ShipmentCreatorUseCase($this->eloquentShipmentRespository);
         $shipment = $shipmentCreator->__invoke($data);
 
-        $taskCreator = new TaskCreator($this->eloquentTaskRepository);
+        $taskCreator = new TaskCreatorUseCase($this->eloquentTaskRepository);
         foreach ($data['tasks'] as $task) {
             $taskCreator->__invoke($shipment, $task);
         }
+
+        $shipmentCalculate = new ShipmentCalculateUseCase($this->eloquentShipmentRespository);
+        $shipmentCalculate->__invoke($shipment);
 
         return response()->json([], JsonResponse::HTTP_CREATED);
     }

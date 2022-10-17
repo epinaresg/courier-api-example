@@ -4,7 +4,7 @@ namespace App\UseCases\Shipment;
 
 use App\Repositories\Shipment\ShipmentRepository;
 
-class ShipmentCreator
+class PaginateShipmentsUseCase
 {
     private $repository;
 
@@ -13,11 +13,8 @@ class ShipmentCreator
         $this->repository = $shipmentRepository;
     }
 
-    public function __invoke(array $data)
+    public function __invoke()
     {
-        $data['tasks_qty'] = count($data['tasks']);
-        $data['tasks_missing'] = $data['tasks_qty'];
-
-        return $this->repository->save($data);
+        return $this->repository->get();
     }
 }
