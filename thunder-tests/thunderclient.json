@@ -67,26 +67,6 @@
     }
   },
   {
-    "_id": "1430d463-c20e-43c2-ac58-96f278331f60",
-    "colId": "6b097df5-b80a-42c5-8687-92ecc22d780f",
-    "containerId": "a5fd15ec-76c9-4baf-9206-f0bab04b2f2b",
-    "name": "Get meta data to create shipment",
-    "url": "{{base_url}}/utilities/data",
-    "method": "GET",
-    "sortNum": 40000,
-    "created": "2022-10-15T21:48:05.215Z",
-    "modified": "2022-10-15T21:48:05.215Z",
-    "headers": [
-      {
-        "name": "Accept",
-        "value": "*/*",
-        "isDisabled": true
-      }
-    ],
-    "params": [],
-    "tests": []
-  },
-  {
     "_id": "e050da33-9056-4f5e-9287-f350ddc13976",
     "colId": "6b097df5-b80a-42c5-8687-92ecc22d780f",
     "containerId": "1402c9bc-d821-494e-9466-8518871dc9b3",

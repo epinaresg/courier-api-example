@@ -27,29 +27,19 @@ class Shipment extends Model
         'total'
     ];
 
-    public function account()
-    {
-        return $this->belongsTo(Account::class);
-    }
-
     public function customer()
     {
-        return $this->belongsTo(Customer::class);
+        return $this->belongsTo(Customer::class); // SELECT * FROM customers where id = '';
     }
 
     public function vehicle()
     {
-        return $this->belongsTo(Vehicle::class);
+        return $this->belongsTo(Vehicle::class); // SELECT * FROM vehicles where id = '';
     }
 
     public function tasks()
     {
-        return $this->hasMany(Task::class);
-    }
-
-    public function scopeAccount($query, string $accountId)
-    {
-        return $query->where('account_id', $accountId);
+        return $this->hasMany(Task::class);  // SELECT * FROM tasks where shipment_id = '';
     }
 
     public function scopeFilter(Builder $builder, $request)

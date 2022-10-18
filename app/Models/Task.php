@@ -35,10 +35,6 @@ class Task extends Model
 
     protected $dates = ['date'];
 
-    public function account()
-    {
-        return $this->belongsTo(Account::class);
-    }
 
     public function deliveryZone()
     {
@@ -53,10 +49,5 @@ class Task extends Model
     public function state()
     {
         return $this->belongsTo(State::class);
-    }
-
-    public function scopeAccount($query, string $accountId)
-    {
-        return $query->where('account_id', $accountId);
     }
 }

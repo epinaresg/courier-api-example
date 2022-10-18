@@ -56,11 +56,6 @@ class User extends Authenticatable implements JWTSubject
         return [];
     }
 
-    public function account()
-    {
-        return $this->belongsTo(Account::class);
-    }
-
     public function scopeEmail($query, $email)
     {
         return $query->where('email', $email);

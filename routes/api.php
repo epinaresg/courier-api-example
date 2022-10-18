@@ -29,12 +29,10 @@ Route::group(['middleware' => 'api', 'prefix' => '/v1'], function () {
     Route::group(['middleware' => 'jwt.verify'], function () {
         Route::post('/auth/logout', LogoutController::class);
 
-
         Route::get('/customers', CustomersGetController::class);
         Route::get('/vehicles', VehiclesGetController::class);
         Route::get('/payment_methods', PaymentMethodsGetController::class);
         Route::get('/delivery_zones', DeliveryZonesGetController::class);
-        //Route::get('/utilities/data', UtilityGetController::class);
 
         Route::post('/shipments', CreateShipmentPostController::class);
         Route::get('/shipments', PaginateShipmentsGetController::class);
