@@ -19,6 +19,7 @@ class CustomersGetController
     {
         $getCustomersUseCase = new GetCustomersUseCase($this->repository);
         $customers = $getCustomersUseCase->__invoke();
+
         return response()->json(GetCustomersResource::collection($customers), JsonResponse::HTTP_OK);
     }
 }

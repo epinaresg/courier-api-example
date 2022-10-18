@@ -19,6 +19,7 @@ class DeliveryZonesGetController
     {
         $getDeliveryZonesUseCase = new GetDeliveryZonesUseCase($this->repository);
         $deliveryZones = $getDeliveryZonesUseCase->__invoke();
+
         return response()->json(GetDeliveryZonesResource::collection($deliveryZones), JsonResponse::HTTP_OK);
     }
 }

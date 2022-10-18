@@ -19,6 +19,7 @@ class PaymentMethodsGetController
     {
         $getPaymentMethodsUseCase = new GetPaymentMethodsUseCase($this->repository);
         $paymentMethods = $getPaymentMethodsUseCase->__invoke();
+
         return response()->json(GetPaymentMethodsResource::collection($paymentMethods), JsonResponse::HTTP_OK);
     }
 }

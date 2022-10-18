@@ -19,6 +19,7 @@ class VehiclesGetController
     {
         $getVehiclesUseCase = new GetVehiclesUseCase($this->repository);
         $vehicles = $getVehiclesUseCase->__invoke();
+
         return response()->json(GetVehiclesResource::collection($vehicles), JsonResponse::HTTP_OK);
     }
 }
