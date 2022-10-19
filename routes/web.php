@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\LinkController;
+use App\Events\TestPublicEvent;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +15,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/firePublic/{user:id}', function (User $user) {
+	dump('BEGIN', date('Y-m-d H:i:s'));
+
+    TestPublicEvent::dispatch('Tipo 1');
+
+	event(new TestPublicEvent('Tipo 2'));
+
+	dump('END', date('Y-m-d H:i:s'));
 });
+
+Route::get('/{user:id}', function (User $user) {
+    return view('welcome', ['user' => $user]);
+});
+
+
 

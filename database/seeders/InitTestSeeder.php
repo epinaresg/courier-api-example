@@ -23,10 +23,25 @@ class InitTestSeeder extends Seeder
     public function run()
     {
         User::create([
-            'first_name' => 'Demo',
+            'first_name' => 'Demo 1',
             'last_name' => 'KumaKloud',
-            'email' => 'demo@kumaKloud.com',
-            'password' => Hash::make('12345678')
+            'email' => 'demo1@kumaKloud.com',
+            'password' => Hash::make('12345678'),
+			'group' => 1
+        ]);
+        User::create([
+            'first_name' => 'Demo 2',
+            'last_name' => 'KumaKloud',
+            'email' => 'demo2@kumaKloud.com',
+            'password' => Hash::make('12345678'),
+			'group' => 2
+        ]);
+        User::create([
+            'first_name' => 'Demo 3',
+            'last_name' => 'KumaKloud',
+            'email' => 'demo3@kumaKloud.com',
+            'password' => Hash::make('12345678'),
+			'group' => 3
         ]);
 
         Customer::factory()->count(20)->create();

@@ -21,6 +21,8 @@ class Customer extends Model
 		'first_name',
 		'last_name',
 
+		'group',
+
 		'business_name',
 		'business_number',
 		'business_phone_code',

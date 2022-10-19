@@ -32,6 +32,8 @@ class User extends Authenticatable implements JWTSubject
         'last_name',
         'email',
         'password',
+
+		'group'
     ];
 
     protected $hidden = [
@@ -59,4 +61,9 @@ class User extends Authenticatable implements JWTSubject
     {
         return $query->where('email', $email);
     }
+
+	public function canJoinGroup(int $groupId): bool
+	{
+		return $this->group == $groupId;
+	}
 }
