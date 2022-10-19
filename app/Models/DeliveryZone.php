@@ -20,6 +20,7 @@ class DeliveryZone extends Model
         'type',
         'price_pick_up',
         'price_drop_off',
+        'currency',
     ];
 
 

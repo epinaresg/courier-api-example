@@ -20,6 +20,7 @@ final class LoginController extends Controller
 
     public function __invoke(LoginRequest $request): JsonResponse
     {
+
         $data = $request->validated();
 
         $userLoginUseCase = new UserLoginUseCase();

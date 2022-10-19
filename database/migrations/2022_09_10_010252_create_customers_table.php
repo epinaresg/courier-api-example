@@ -22,10 +22,15 @@ return new class () extends Migration {
             $table->string('last_name');
             $table->string('password')->nullable();
 
+            $table->string('tags')->nullable();
 
             $table->string('business_name')->nullable();
             $table->string('business_number')->nullable();
-            $table->string('business_address')->nullable();
+
+            $table->string('business_address_line_one')->nullable();
+            $table->string('business_address_line_two')->nullable();
+            $table->string('business_address_line_three')->nullable();
+
             $table->string('business_phone_code')->nullable();
             $table->string('business_phone_number')->nullable();
             $table->string('business_email')->nullable();

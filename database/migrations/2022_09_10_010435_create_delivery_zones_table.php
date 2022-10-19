@@ -18,8 +18,9 @@ return new class () extends Migration {
             $table->string('name');
             $table->enum('type', ['Recojo y entrega', 'Solo recojo', 'Solo entrega']);
 
-            $table->decimal('price_pick_up', 10, 2)->default('0.00');
-            $table->decimal('price_drop_off', 10, 2)->default('0.00');
+            $table->integer('price_pick_up')->default('0');
+            $table->decimal('price_drop_off')->default('0');
+            $table->string('currency')->default('PEN');
 
             $table->timestamps();
             $table->softDeletes();

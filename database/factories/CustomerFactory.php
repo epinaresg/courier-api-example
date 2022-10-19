@@ -21,9 +21,14 @@ class CustomerFactory extends Factory
             'last_name' => fake()->lastName(),
             'email' => fake()->safeEmail(),
 
+            'tags' => json_encode(['php', 'js', 'node.js']),
+
             'business_name' => fake()->company(),
             'business_number' => fake()->ean13(),
-            'business_address' => fake()->address(),
+
+            'business_address_line_one' => fake()->address(),
+            'business_address_line_two' => fake()->address(),
+            'business_address_line_three' => fake()->address(),
 
             'business_phone_code' => '+' . rand(1, 150),
             'business_phone_number' => fake()->phoneNumber(),

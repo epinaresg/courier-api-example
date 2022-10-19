@@ -20,11 +20,11 @@ class DeliveryZoneFactory extends Factory
         shuffle($enumDeliveryZones);
 
         return [
-
             'name' => ucwords(fake()->word()) . ' ' . ucwords(fake()->word()) . ' Zona',
             'type' => reset($enumDeliveryZones),
-            'price_pick_up' => rand(9, 15) . '.00',
-            'price_drop_off' =>  rand(9, 15) . '.00',
+			'currency' => 'PEN',
+            'price_pick_up' => rand(900, 1500),
+            'price_drop_off' =>  rand(900, 1500) ,
         ];
     }
 }

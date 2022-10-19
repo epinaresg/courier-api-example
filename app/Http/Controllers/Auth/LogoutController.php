@@ -10,6 +10,6 @@ final class LogoutController extends Controller
     public function __invoke()
     {
         auth()->logout();
-        return response()->json([ ], JsonResponse::HTTP_OK);
+        return response()->json([], JsonResponse::HTTP_OK);
     }
 }
